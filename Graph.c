@@ -96,6 +96,9 @@ static void  insertE(Graph G, Edge e) {
   G->E++;
 }
 
+//
+// Created by s259105 on 13/02/2020.
+//
 static void checkvalR(Graph G,int **S,int v,int *d,int *visited){
     for(link t=G->ladj[v];t!=G->z;t=t->next){
         if(!visited[t->v]){
